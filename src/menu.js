@@ -1,7 +1,6 @@
-const menu = ()=>{
-    const hello = document.createElement("div");
-    hello.textContent = "Menu";
-    document.querySelector("body").appendChild(hello);
+const loadMenu = ()=>{
+    const content = document.querySelector('.content');
+    content.innerHTML = '';
 }
     
-export default {menu}
+export {loadMenu};

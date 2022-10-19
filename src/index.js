@@ -1,4 +1,7 @@
-import './style.css'
+import './style.css';
+import {loadHome} from './home';
+import {loadMenu} from './menu';
+import {loadContact} from './contact';
 
 function resetPage(){
 
@@ -15,7 +18,6 @@ function resetPage(){
     const footer = document.createElement("div");
     footer.classList.add('footer');
     
-   
     body.appendChild(header);
     body.appendChild(content);
     body.appendChild(footer);
@@ -63,26 +65,38 @@ function changePage(page){
 
     switch(page){
         case 'home':
-            home.classList.add('navbarSelected');
-            menu.classList.remove('navbarSelected');
-            contact.classList.remove('navbarSelected');
+            selectTab(home);
+            unselectTab(menu);
+            unselectTab(contact);
+            loadHome();
             break;
         case 'menu':
-            home.classList.remove('navbarSelected');
-            menu.classList.add('navbarSelected');
-            contact.classList.remove('navbarSelected');
+            selectTab(menu);
+            unselectTab(home);
+            unselectTab(contact);
+            loadMenu();
             break;
         case 'contact':
-            home.classList.remove('navbarSelected');
-            menu.classList.remove('navbarSelected');
-            contact.classList.add('navbarSelected');
+            selectTab(contact);
+            unselectTab(menu);
+            unselectTab(home);
+            loadContact();
             break;
     }
+}
+
+function selectTab(page){
+    page.classList.add('navbarSelected');
+}
+
+function unselectTab(page){
+    page.classList.remove('navbarSelected');
 }
 
 resetPage();
 createNavbar();
 addEventListener();
+loadHome();
 
 
 

@@ -1,7 +1,6 @@
-const contact = ()=>{
-    const hello = document.createElement("div");
-    hello.textContent = "contact";
-    document.querySelector("body").appendChild(hello);
+const loadContact = ()=>{
+    const content = document.querySelector('.content');
+    content.innerHTML = '';
 }
     
-export default {contact}
+export {loadContact};
