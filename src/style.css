@@ -97,6 +97,30 @@
     padding:0 4vh 4vh 4vh;
 }
 
+.menuContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.menuTitle{
+    flex: 1;
+    background-color: #FBBF24;
+    color: #7F1D1D;
+    font-size: 40px;
+    border-radius: 0 25px 25px 0;
+    margin: 2vh 0 2vh 0;
+    padding: 1vh 0 1vh 3vh;
+    width: 15%;
+    min-width: 300px;
+    font-weight: bolder;
+}
+
+.menuBody{
+    flex:10;
+    overflow-y: scroll;
+}
+
 .footer{
     flex: 0.5;
     background-color: #7F1D1D;
@@ -106,4 +130,22 @@
 
 .navbar{
     background-color: #FEE2E2;
+}
+
+.pic-container{
+    flex: 3;
+}
+
+.pic-container-img{
+    height: 200px;
+}
+
+.menu-detail-container{
+    flex: 7;
+}
+
+.menu-container{
+    height: 35%;
+    display: flex;
+    direction: row;
 }
