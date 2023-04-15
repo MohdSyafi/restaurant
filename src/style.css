@@ -103,15 +103,21 @@
     height: 100%;
 }
 
+.menuTitleDiv{
+    flex: 2;
+    width: 100%;
+    min-width: 300px;
+}
+
 .menuTitle{
-    flex: 1;
     background-color: #FBBF24;
     color: #7F1D1D;
     font-size: 40px;
     border-radius: 0 25px 25px 0;
-    margin: 2vh 0 2vh 0;
+    margin: 6.5vh 0 1vh 0;
     padding: 1vh 0 1vh 3vh;
-    width: 15%;
+    display: block;
+    width: 42%;
     min-width: 300px;
     font-weight: bolder;
 }

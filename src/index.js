@@ -59,38 +59,35 @@ function addEventListener(){
 
 function changePage(page){
 
-    const menu = document.querySelector('[data-name="menu"]'); 
-    const home = document.querySelector('[data-name="home"]');
-    const contact = document.querySelector('[data-name="contact"]'); 
-
     switch(page){
         case 'home':
-            selectTab(home);
-            unselectTab(menu);
-            unselectTab(contact);
+            selectUnselectTab(page);
             loadHome();
             break;
         case 'menu':
-            selectTab(menu);
-            unselectTab(home);
-            unselectTab(contact);
+            selectUnselectTab(page);
             loadMenu();
             break;
         case 'contact':
-            selectTab(contact);
-            unselectTab(menu);
-            unselectTab(home);
+            selectUnselectTab(page);
             loadContact();
             break;
     }
 }
 
-function selectTab(page){
-    page.classList.add('navbarSelected');
-}
+function selectUnselectTab(selectedPage){
+    const pageList = ['menu','home','contact'];
 
-function unselectTab(page){
-    page.classList.remove('navbarSelected');
+    pageList.forEach(x=>{
+
+        const Header =  document.querySelector(`[data-name="${x}"]`)
+
+        if(x != selectedPage){
+            Header.classList.remove('navbarSelected');
+        }else{
+            Header.classList.add('navbarSelected');
+        }
+    })
 }
 
 resetPage();

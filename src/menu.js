@@ -19,8 +19,11 @@ const loadMenu = ()=>{
     menuContainer.classList.add('menuContainer');
     
     const menuTitle = document.createElement('div');
-    menuTitle.textContent = 'Menu';
-    menuTitle.classList.add('menuTitle');
+    const menuTitleSpan = document.createElement('span');
+    menuTitleSpan.textContent = 'Menu';
+    menuTitle.appendChild(menuTitleSpan);
+    menuTitle.classList.add('menuTitleDiv');
+    menuTitleSpan.classList.add('menuTitle');
 
     const menuBody = document.createElement('div');
     menuBody.classList.add('menuBody');
@@ -32,7 +35,7 @@ const loadMenu = ()=>{
 
       const picContainer = document.createElement('div');
       const picHolder = document.createElement('img');
-      const picSource = images['ribeye.jpg'];
+      const picSource = images[element.pic];
       picHolder.setAttribute('src',picSource);
       picHolder.classList.add('pic-container-img');
       picContainer.appendChild(picHolder);

@@ -3,7 +3,7 @@
     <menu>
         <name>Black Paper Ribeye Steak</name>
         <price>35$</price>
-        <pic>./images/ribeye.jpg</pic>
+        <pic>ribeye.jpg</pic>
         <desc>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur interdum vehicula. 
             Maecenas elit tortor, gravida fermentum pharetra at, sagittis sed justo. Aliquam non nisl congue, 
@@ -14,7 +14,7 @@
     <menu>
         <name>Lasagna</name>
         <price>25$</price>
-        <pic>./images/lasagna.jpg</pic>
+        <pic>lasagna.jpg</pic>
         <desc>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur interdum vehicula. 
             Maecenas elit tortor, gravida fermentum pharetra at, sagittis sed justo. Aliquam non nisl congue, 
@@ -25,7 +25,7 @@
     <menu>
         <name>Hawaiian Chicken Pizza</name>
         <price>15$</price>
-        <pic></pic>
+        <pic>gordon.jpg</pic>
         <desc>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur interdum vehicula. 
             Maecenas elit tortor, gravida fermentum pharetra at, sagittis sed justo. Aliquam non nisl congue, 
