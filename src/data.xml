@@ -33,4 +33,15 @@
             magna et placerat faucibus, mauris nisi fringilla magna, ut fermentum 
         </desc>
     </menu>
+        <menu>
+        <name>Hawaiian Chicken Pizza</name>
+        <price>15$</price>
+        <pic>lasagna.jpg</pic>
+        <desc>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur interdum vehicula. 
+            Maecenas elit tortor, gravida fermentum pharetra at, sagittis sed justo. Aliquam non nisl congue, 
+            volutpat purus at, vulputate nibh. Donec egestas dictum justo, ut porta lacus varius id. Nulla sodales, 
+            magna et placerat faucibus, mauris nisi fringilla magna, ut fermentum 
+        </desc>
+        </menu>
 </menulist>

@@ -1,14 +1,14 @@
 .body{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     background-color: #FEE2E2;
     height: 100vh;
     margin: 0;
     padding: 0;
+    grid-template-rows: 1fr 10fr 0.5fr;
 }
 
 .header{
-    flex:1;
+
     margin: 0 12px 0 12px;
     padding: 0;
     display: flex;
@@ -34,9 +34,9 @@
 }
 
 .content{
-    flex: 10;
     margin: 0;
     padding: 0;
+    overflow-y: hidden;
 }
 
 .homeContent{
@@ -98,13 +98,10 @@
 }
 
 .menuContainer{
-    display: flex;
-    flex-direction: column;
     height: 100%;
 }
 
 .menuTitleDiv{
-    flex: 2;
     width: 100%;
     min-width: 300px;
 }
@@ -123,12 +120,11 @@
 }
 
 .menuBody{
-    flex:10;
-    overflow-y: scroll;
+    height: 100%;
+    max-height: 100%;
 }
 
 .footer{
-    flex: 0.5;
     background-color: #7F1D1D;
     margin: 0;
     padding: 0;
@@ -140,18 +136,77 @@
 
 .pic-container{
     flex: 3;
+    height: 100%;
+    width: 30%;
+    
 }
 
 .pic-container-img{
-    height: 200px;
+    height: 100%;
+    width: 100%;
+    border-radius:0 35px 35px 0;
 }
 
 .menu-detail-container{
     flex: 7;
+    border-style: solid ;
+    border-color: #EF4444;
+    background-color: #7F1D1D;
+    border-width: 20px;
+    border-radius: 25px 0 0 25px;
+    border-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuBodyContainer{
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
 }
 
 .menu-container{
     height: 35%;
     display: flex;
     direction: row;
+    flex: 1;
+    gap: 30px;
+
 }
+
+.menuTitleDescCont{
+    display: flex;
+    flex-direction: row;
+}
+
+.menuTitleText{
+    color: #FBBF24;
+    text-align:center;
+    font-size: 36px;
+    font-weight: bold;
+    padding-left: 30px;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+}
+
+.menuDescText{
+    text-align:center;
+    color: #FEE2E2;
+    font-size: 20px;
+    padding:4vh 4vh 4vh 4vh;
+}
+
+.menuDescPrice{
+    width: 100%;
+    text-align:end;
+    padding-right:45px ;
+    color: #FEE2E2;
+    font-size: 30px;
+    font-weight: bold;
+}
+
