@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<menulist>
+<datalist>
+
     <menu>
         <name>Black Paper Ribeye Steak</name>
         <price>35$</price>
@@ -33,7 +34,7 @@
             magna et placerat faucibus, mauris nisi fringilla magna, ut fermentum 
         </desc>
     </menu>
-        <menu>
+    <menu>
         <name>Hawaiian Chicken Pizza</name>
         <price>15$</price>
         <pic>lasagna.jpg</pic>
@@ -43,5 +44,29 @@
             volutpat purus at, vulputate nibh. Donec egestas dictum justo, ut porta lacus varius id. Nulla sodales, 
             magna et placerat faucibus, mauris nisi fringilla magna, ut fermentum 
         </desc>
-        </menu>
-</menulist>
+    </menu>
+        <contact>
+        <name>Chef Gordon Ramseus</name>
+        <email>gordon@ramsey.com</email>
+        <pic>gordon.jpg</pic>
+        <phone>3434343242</phone>
+    </contact>
+        <contact>
+        <name>Chef Gordon Ramseus</name>
+        <email>gordon@ramsey.com</email>
+        <pic>gordon.jpg</pic>
+        <phone>3434343242</phone>
+    </contact>
+        <contact>
+        <name>Chef Gordon Ramseus</name>
+        <email>gordon@ramsey.com</email>
+        <pic>gordon.jpg</pic>
+        <phone>3434343242</phone>
+    </contact>
+        <contact>
+        <name>Chef Gordon Ramseus</name>
+        <email>gordon@ramsey.com</email>
+        <pic>gordon.jpg</pic>
+        <phone>3434343242</phone>
+    </contact>
+</datalist>

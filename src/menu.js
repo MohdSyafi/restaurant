@@ -10,8 +10,7 @@ const loadMenu = ()=>{
   }
 
     const images = importAll(require.context('./images', false, /\.jpg$/));
-    console.log(images);
-    
+
     const content = document.querySelector('.content');
     content.innerHTML = '';
 
@@ -31,7 +30,7 @@ const loadMenu = ()=>{
     const menuBodyCont = document.createElement('div');
     menuBodyCont.classList.add('menuBodyContainer');
     
-    const menulist = Data.menulist.menu;
+    const menulist = Data.datalist.menu;
 
     menulist.forEach(element => {
       const menuItem = document.createElement('div');
